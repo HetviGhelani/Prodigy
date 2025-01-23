@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: black;
+      }
+      header {
+        background: linear-gradient(45deg, #06c2e3, darkblue);
+        color: #eff0ec;
+        padding: 2rem 0;
+        text-align: center;
+        position: relative;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 3rem;
+      }
+      header p {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+      }
+      header .cta {
+        margin-top: 1.5rem;
+      }
+      header .cta a {
+        text-decoration: none;
+        background: #ebedec;
+        color: #178be3;
+        padding: 0.75rem 1.5rem;
+        border-radius: 25px;
+        font-weight: bold;
+        transition: background 0.3s, color 0.3s;
+      }
+      header .cta a:hover {
+        background: #007bff;
+        color: #fff;
+      }
+      .container {
+        width: 85%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 2rem 0;
+      }
+      .about {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+      }
+      .about img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .about div {
+        max-width: 600px;
+      }
+      .about h2 {
+        margin-top: 0;
+        color: #007bff;
+        font-size: 2.5rem;
+      }
+      .about p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+      }
+      .skills,
+      .projects {
+        margin-bottom: 3rem;
+      }
+      .skills ul {
+        list-style: none;
+        padding: 0;
+      }
+      .skills li {
+        background: #f4f4f4;
+        padding: 0.75rem;
+        margin: 0.5rem 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .projects .project {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .projects h3 {
+        margin: 0;
+        font-size: 1.8rem;
+        color: #007bff;
+      }
+      footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1.5rem 0;
+        margin-top: 2rem;
+      }
+      footer p {
+        margin: 0;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Portfolio</h1>
+      <p>Full Stack Web Developer</p>
+      <div class="cta">
+        <a href="">View My Work</a>
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="about">
+        <img src="/8.jpg" alt="Profile Picture" />
+        <div>
+          <h2>About Me</h2>
+          <p>
+            Hi, I'm Hetvi Ghelani, a passionate full stack web developer with a
+            strong background in creating visually appealing and user-friendly
+            websites. I have a degree in BCA from GLS University building
+            websites and applications that drive success for clients.
+          </p>
+        </div>
+      </section>
+
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Angular,Java,Linux</li>
+          <li>Database Management (MySQL)</li>
+          <li>Flutter, Full Stack Web development</li>
+        </ul>
+      </section>
+
+      <section class="projects">
+        <h2>Projects</h2>
+        <div>
+          <h3>Interactive Data Dashboard</h3>
+          <p>
+            A feature-rich dashboard showcasing data visualization using D3.js
+            and Chart.js. Implemented for business intelligence insights.
+          </p>
+        </div>
+        <div>
+          <h3>AI-Powered Blog Generator</h3>
+          <p>
+            An AI-driven tool that generates engaging blog content using OpenAI
+            APIs. Integrated with custom editing capabilities.
+          </p>
+        </div>
+        <div>
+          <h3>Gamified Habit Tracker</h3>
+          <p>
+            A gamified application for tracking daily habits, with rewards and
+            progress visualization, built using React and Firebase.
+          </p>
+        </div>
+        <div>
+          <h3>Real-Time Collaboration Tool</h3>
+          <p>
+            A web app enabling real-time document collaboration with WebRTC and
+            Node.js backend support.
+          </p>
+        </div>
+        <div>
+          <h3>Personal Finance Manager</h3>
+          <p>
+            A mobile-responsive app to manage personal finances with budget
+            tracking and analytics, built using Angular and Bootstrap.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Hetvi Ghelani. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
