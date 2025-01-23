@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stylish Stopwatch</title>
+    <style>
+      body {
+        font-family: "Poppins", Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+        background: linear-gradient(135deg, #5eea68, #b37592);
+        color: #333;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+      }
+
+      #display {
+        font-size: 4rem;
+        margin: 20px 0;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+      }
+
+      button {
+        padding: 12px 25px;
+        margin: 10px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        color: #fff;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      button:active {
+        transform: translateY(2px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      button:nth-child(1) {
+        background: linear-gradient(135deg, #76b852, #8dc26f);
+      }
+
+      button:nth-child(2) {
+        background: linear-gradient(135deg, #f7971e, #ffd200);
+      }
+
+      button:nth-child(3) {
+        background: linear-gradient(135deg, #fc5c7d, #6a82fb);
+      }
+
+      footer {
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+      }
+
+      footer a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Stopwatch</h1>
+    <div id="display">00:00:00</div>
+    <button onclick="start()">Start</button>
+    <button onclick="pause()">Pause</button>
+    <button onclick="reset()">Reset</button>
+
+    <footer>Crafted with ❤ by <a href="#">You</a></footer>
+
+    <script>
+      let timer;
+      let isRunning = false;
+      let Time = 0;
+
+      function Display() {
+        const sec = Math.floor(Time / 1000) % 60;
+        const min = Math.floor(Time / 60000) % 60;
+        const hours = Math.floor(Time / 3600000);
+        document.getElementById("display").textContent = `${String(
+          hours
+        ).padStart(2, "0")}:${String(min).padStart(2, "0")}:${String(
+          sec
+        ).padStart(2, "0")}`;
+      }
+
+      function start() {
+        if (isRunning) return;
+        isRunning = true;
+        const startTime = Date.now() - Time;
+        timer = setInterval(() => {
+          Time = Date.now() - startTime;
+          Display();
+        }, 1000);
+      }
+
+      function pause() {
+        if (!isRunning) return;
+        isRunning = false;
+        clearInterval(timer);
+      }
+
+      function reset() {
+        isRunning = false;
+        clearInterval(timer);
+        Time = 0;
+        Display();
+      }
+    </script>
+  </body>
+</html>
