@@ -240,3 +240,145 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+
+
+
+.topbar {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+}
+.nav-link:hover {
+  color: #ff7f50 !important;
+}
+.navbar-brand img {
+  height: 50px;
+}
+.center-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.topbar {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+}
+.nav-link:hover {
+  color: #ff7f50 !important;
+}
+.navbar-brand img {
+  height: 50px;
+}
+.center-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.carousel-item img {
+  height: 600px;
+  object-fit: cover;
+}
+
+/* Navbar hover effect */
+.nav-link {
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #ff7f50 !important;
+}
+
+/* Service card button hover effect */
+.service-card .btn {
+  background-color: #ff7f50;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.service-card .btn:hover {
+  background-color: #ff5733;
+}
+
+/* Footer hover effect */
+footer a:hover {
+  color: #ff7f50 !important;
+  text-decoration: underline;
+}
+
+/* Footer links */
+footer a {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for footer section text */
+footer h5 {
+  transition: color 0.3s ease;
+}
+footer h5:hover {
+  color: #ff7f50;
+}
+
+/* Smooth hover transition for the navbar items */
+.navbar-nav .nav-item .nav-link {
+  transition: transform 0.2s ease-in-out;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  transform: scale(1.1);
+}
+
+/* Smooth hover transition for the footer items */
+.list-unstyled li a {
+  transition: transform 0.2s ease-in-out;
+}
+.list-unstyled li a:hover {
+  transform: scale(1.05);
+}
+
+/* Style for Content Placeholder */
+.content-placeholder {
+  background-color: #ff7f50; /* Coral background color */
+  color: #fff; /* White text */
+  padding: 60px 0; /* Add padding around content */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center;
+  transition: background-color 0.5s ease, transform 0.5s ease; /* Transition for background color and transform */
+}
+
+/* Hover effect for content placeholder */
+.content-placeholder:hover {
+  background-color: #ff6347; /* Change background color to Tomato */
+  transform: scale(1.05); /* Slightly enlarge the section */
+}
+
+/* Attractive Font for the heading */
+.content-placeholder h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 4rem; /* Larger font size */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+/* Add hover effect to the heading */
+.content-placeholder h1:hover {
+  transform: scale(1.1); /* Enlarge heading when hovered */
+}
+
+/* Font for the paragraph */
+.content-placeholder p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem; /* Larger font size */
+  max-width: 700px;
+  margin: 0 auto;
+  transition: color 0.3s ease; /* Transition for color change */
+}
+
+/* Hover effect for paragraph */
+.content-placeholder p:hover {
+  color: #ffd700; /* Change text color to gold on hover */
+}
+
